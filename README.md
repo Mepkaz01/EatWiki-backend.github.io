@@ -12,5 +12,24 @@ About the App: This app is being created for people who want and need easy acces
 
 ## User Stories
 
-user storied are going here 
+Two Models: User and Item
+* CRUD for User table:
+  1) Log In
+  2) Sign Up
+  3) Profile
+  4) Profile Edit
+  5) Profile Delete
+
+* CRUD for Item table:
+  1) Index/Item Listing
+  2) Add Item
+  3) Update Item
+  4) Delete Item
+
+## Technologies Used
+
+## Solved problems and Approach taken
+
+## Unsolved Problems
+
 
