@@ -1,1 +1,1 @@
-# Project3.github.io
+# EatWiki.github.io
