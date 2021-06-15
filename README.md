@@ -4,7 +4,7 @@ About the App: This app is being created for people who want and need easy acces
 
 ## WireFrame
 
-https://github.com/Mepkaz01/EatWiki-backend.github.io/commit/d132c85eba5b2cf477bf2c70a340e008c2580e7c
+![wireframe](https://github.com/Mepkaz01/EatWiki-backend.github.io/blob/main/WireFrame.png)
 
 ## ER Diagram
 
