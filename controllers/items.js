@@ -14,8 +14,44 @@ const getItem = (req,res) => {
     })
 }   
 
+const editItem= (req,res) =>{
+    Item.update(req.body,{
+        where:{
+            id:req.params.indx
+        },
+        returning: true
+    }).then(updatedItem =>{
+        res.jason(updatedItem)
+    })
+}
+
+const createItem= (req,res) =>{
+    Item.create(req.body).then(
+        newitem =>{
+            res.json(newitem)
+
+        }
+    )
+}
+
+const deleteItem = (req,res) =>{
+    Item.destroy({where:{id:req.params.indx}}).then(
+        deletedItem =>{
+            console.log("Item Deleted ")
+        }
+
+    )
+ 
+    }
+
+    
+
+
 
 module.exports={
     showAll,
-    getItem
+    getItem,
+    editItem,
+    createItem,
+    deleteItem
 }
