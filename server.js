@@ -1,12 +1,26 @@
 const express=require('express')
-const app =express();
 const bodyParser=require('body-parser');
 const methodOverride=require('method-override');
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(methodOverride('_method'));
-app.use(bodyParser.json());
-const routes=require('./routes');
+const cors = require('cors');
 
-app.use('/user',routes.user)
+const app = express();
+const routes = require('./routes');
+const contants = require('./constants');
+
+const corsOptions = {
+    origin: ['http://localhost:3000'],
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true, //allows session cookies to be sent back and forth
+    optionsSuccessStatus: 200 //legacy browsers
+  }
+
+// app.use(bodyParser.urlencoded({extended:false}));
+// app.use(methodOverride('_method'));
+app.use(cors(corsOptions))
+app.use(bodyParser.json());
+
+app.use('/auth', routes.auth);
+app.use('/user', routes.user)
+
 
 app.listen(3001, ()=>{console.log(" I am listening at port 3001")})

@@ -17,25 +17,34 @@ const getProfile = (req, res) => {
     })
 }
 
-const createProfile = (req, res) => {
-    req.body.userId = req.user.id;
-    User.create(req.body)
-    .then(newUser => {
-        res.json(user)
-    })
-}
+// const createProfile = (req, res) => {
+//     req.body.userId = req.user.id;
+//     User.create(req.body)
+//     .then(newUser => {
+//         res.json(newUser)
+//     })
+// }
 
 const editProfile = (req, res) => {
-    User.findByPk(req.body, {
-        where: {
-            id: req.params.index
-        },
-        returning: true
-    })
-    .then(user => {
-        console.log(user)
-        res.json(user)
-    })
+    User.update(req.body,{        
+        where:{            
+            id: req.params.index        
+        },        
+        returning: true    
+    }).then(updatedUser =>{        
+        res.jason(updatedUser)    })
+
+    
+    // User.findByPk(req.body, {
+    //     where: {
+    //         id: req.params.index
+    //     },
+    //     returning: true
+    // })
+    // .then(user => {
+    //     console.log(user)
+    //     res.json(user)
+    // })
 }
 
 const deleteProfile = (req, res) => {
@@ -53,7 +62,7 @@ module.exports = {
     getProfileAll,
     getProfile,
     editProfile,
-    createProfile,
+    // createProfile,
     deleteProfile
    
 }
