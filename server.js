@@ -19,8 +19,13 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(bodyParser.json());
 
+
 app.use('/auth', routes.auth);
-app.use('/user', routes.user)
+app.use('/user', routes.user);
+app.use('/items', routes.items);
+
 
 
 app.listen(3001, ()=>{console.log(" I am listening at port 3001")})
+
+

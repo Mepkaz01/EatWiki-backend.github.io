@@ -1,3 +1,4 @@
+
 const User = require('../models').User;
 
 const getProfileAll = (req, res) => {
@@ -65,4 +66,5 @@ module.exports = {
     // createProfile,
     deleteProfile
    
+
 }
