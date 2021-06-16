@@ -1,24 +1,27 @@
 {
-  "name": "eatwiki-backend.github.io",
+  "name": "Project3-backend.github.io",
   "version": "1.0.0",
-  "description": "About the App: This app is being created for people who want and need easy access to restaurants locally and abroad. A search app for everyone that likes on hand information when they want to go out to eat or grab a quick meal.",
-  "main": "\u001b[D\u001b[D\u001b[D\u001bserver.js)",
+  "description": "",
+  "main": "server.js)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mepkaz01/EatWiki-backend.github.io.git"
+    "url": "git+https://github.com/Mepkaz01/Project3-backend.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mepkaz01/EatWiki-backend.github.io/issues"
+    "url": "https://github.com/Mepkaz01/Project3-backend.github.io/issues"
   },
-  "homepage": "https://github.com/Mepkaz01/EatWiki-backend.github.io#readme",
+  "homepage": "https://github.com/Mepkaz01/Project3-backend.github.io#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "nodemon": "^2.0.7",
     "pg": "^8.6.0",
