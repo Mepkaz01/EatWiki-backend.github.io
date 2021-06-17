@@ -1,5 +1,5 @@
-
 const User = require('../models').User;
+const constants = require('../constants');
 
 const getProfileAll = (req, res) => {
     
@@ -29,11 +29,11 @@ const getProfile = (req, res) => {
 const editProfile = (req, res) => {
     User.update(req.body,{        
         where:{            
-            id: req.params.index        
+            id: req.params.id        
         },        
         returning: true    
-    }).then(updatedUser =>{        
-        res.jason(updatedUser)    })
+    }).then(updatedUser => {        
+        res.json(updatedUser)    })
 
     
     // User.findByPk(req.body, {
@@ -51,11 +51,12 @@ const editProfile = (req, res) => {
 const deleteProfile = (req, res) => {
     User.destroy({
         where: {
-            id: req.params.index
+            id: req.params.id
         }
     })
-    .then(() => {
-        console.log("user deleted")
+    .then(deletedUser => {
+        res.json(deletedUser)
+        
     })
 }
 
