@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 const routes = require('./routes');
-const contants = require('./constants');
+const constants = require('./constants');
 
 const corsOptions = {
     origin: ['http://localhost:3000'],
@@ -14,7 +14,7 @@ const corsOptions = {
     optionsSuccessStatus: 200 //legacy browsers
   }
 
-// app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({extended:false}));
 // app.use(methodOverride('_method'));
 app.use(cors(corsOptions))
 app.use(bodyParser.json());

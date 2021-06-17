@@ -5,8 +5,8 @@ const ctrl = require('../controllers');
 
 router.get('/all', ctrl.user.getProfileAll);
 router.get('/profile/:id', ctrl.user.getProfile);
-router.put('/profile/:index', ctrl.user.editProfile);
-router.delete('/:index', ctrl.user.deleteProfile);
+router.put('/profile/:id', ctrl.user.editProfile);
+router.delete('/profile/:id', ctrl.user.deleteProfile);
 
 
 
