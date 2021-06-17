@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": "Legacy@01",
+    "password": "noah32",
     "database": "salepoint_dev",
     "host": "127.0.0.1",
     "dialect": "postgres",
