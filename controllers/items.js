@@ -21,7 +21,7 @@ const editItem= (req,res) =>{
         },
         returning: true
     }).then(updatedItem =>{
-        res.jason(updatedItem)
+        res.json(updatedItem)
     })
 }
 
