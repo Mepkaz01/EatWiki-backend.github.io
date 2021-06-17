@@ -21,7 +21,7 @@ const editItem= (req,res) =>{
         },
         returning: true
     }).then(updatedItem =>{
-        res.jason(updatedItem)
+        res.json(updatedItem)
     })
 }
 
@@ -35,12 +35,11 @@ const createItem= (req,res) =>{
 }
 
 const deleteItem = (req,res) =>{
-    Item.destroy({where:{id:req.params.indx}}).then(
-        deletedItem =>{
+    Item.destroy({where:{id:req.params.indx}})
+    .then( deletedItem =>{
             console.log("Item Deleted ")
-        }
-
-    )
+             res.json(deletedItem)
+        })
  
     }
 
