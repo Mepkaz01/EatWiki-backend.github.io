@@ -5,27 +5,27 @@ module.exports = {
     await queryInterface.bulkInsert('Users', [
     {
       name: 'Jeremiah Miller',        
-      username: 'jmiller',        
+      username: 'jeremiah',        
       password: 'asdf',        
-      email: 'jmillerr@up.com'            
+      email: 'jeremiah@test.com'            
     },      
     {        
       name: 'Baibhav Kumar',        
-      username: 'bkumar',        
+      username: 'kumar',        
       password: 'asdf',        
-      email: 'bkumar@up.com'              
+      email: 'kumar@test.com'              
     },      
     {        
       name: 'Pachel Pederson',        
       username: 'pachel',        
       password: 'asdf',        
-      email: 'ppachelr@up.com'             
+      email: 'pachel@test.com'             
     },      
     {        
       name: 'Julia Christensen',        
       username: 'julia',        
       password: 'asdf',        
-      email: 'cjulia@up.com'     
+      email: 'julia@test.com'     
 
       
     
@@ -35,6 +35,6 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     return queryInterface.bulkDelete('Users', null, {});
-    
+   
   }
 };
