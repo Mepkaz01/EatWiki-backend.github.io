@@ -63,7 +63,7 @@ module.exports = {
         price: 100,
         status: "Used",
         description: "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-        image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
         userId: 4
       },
       {
@@ -72,7 +72,7 @@ module.exports = {
         price: 69,
         status: "New",
         description: "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity",
-        image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
         userId: 2
       },
       {
