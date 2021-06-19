@@ -6,7 +6,7 @@ module.exports = {
       {
         itemName: "Backpack, Fits 15 Laptops",
         category: "Men's Accessories",
-        price: 20,
+        price: 19.99,
         status: "Used",
         description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday.",
         image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
@@ -26,7 +26,7 @@ module.exports = {
       {
         itemName: "Samsung 30 inch Monitor",
         category: "Electronics",
-        price: 120,
+        price: 129.99,
         status: "Used",
         description: "Samsung Odyssey G7 26.9 16:9 240 Hz Curved VA G-SYNC HDR Gaming Monitor",
         image: "https://static.bhphoto.com/images/images500x500/samsung_lc27g75tqsnxza_27_c27tg70_gaming_monitor_1593534951_1554563.jpg",
