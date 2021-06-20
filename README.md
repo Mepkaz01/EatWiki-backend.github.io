@@ -4,13 +4,10 @@ About our Project: E-Commerce site created to connect users either buying or sel
 
 https://github.com/Mepkaz01/Project3-backend.github.io
 
-## WireFrame
-
-![wireframe](https://github.com/Mepkaz01/EatWiki-backend.github.io/blob/main/WireFrame.png)
-
 ## ER Diagram
 
-![erd](https://github.com/Mepkaz01/EatWiki-backend.github.io/blob/main/ERD.png)
+![ERD Image](https://user-images.githubusercontent.com/82845234/122682128-ac098680-d1c5-11eb-9c48-fdc8b2e79780.png)
+
 
 ## User Stories
 
