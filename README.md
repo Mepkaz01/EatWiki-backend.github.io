@@ -54,9 +54,13 @@ In your terminal (gitbash or command prompt)
 7) To undo migrate and seed
     * npx sequelize db:migrate:undo
     * npx sequelize db:seed:undo:all
+8) npm install cors
+9) npm install use-constant
 
 ## Solved problems and Approach taken
 
-## Unsolved Problems
+* Calling axios get from backend to frontend for user table
+* res-direct vs res.json
+
 
 
