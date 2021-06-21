@@ -59,8 +59,8 @@ In your terminal (gitbash or command prompt)
 
 ## Solved problems and Approach taken
 
-* Calling axios get from backend to frontend for user table
-* res-direct vs res.json
+* Calling axios get from backend to frontend for user table - used the Project Wayfarer for guidance. Installed cors. 
+* res-direct vs res.json - backend Controller needs to have res.json instead of res.redirect.
 
 
 
